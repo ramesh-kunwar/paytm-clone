@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1440px'
+                },
+                extend: {
+                    colors: {
+                        myLightBlue: '#00bbf2',
+                        myDarkBlue: '#0f4b8a',
+                        myGray: '#f6f6f6',
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="shadow-xl z-50">
+        <div class="flex items-center justify-between font-bold text-gray-600    py-4">
+            <div class="toggle ml-10">
+                <img class="lg:hidden" src="./images/icons8-menu-30.png" alt="">
+            </div>
+            <div class="logo">
+                <img class="w-[200px] " src="./images/paytm_logo.png" alt="">
+            </div>
+            <div class="sm:hidden lg:inline-flex nav-links space-x-5">
+                <a href="#">Paytm for Customer</a>
+                <a href="#">Paytm For Business</a>
+                <a href="#">Company</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Career</a>
+            </div>
+            <div
+                class="text-white flex items-center justify-center  space-x-2 bg-myLightBlue rounded-full px-3 py-1 mr-10">
+                <a href="#" class=""> Sign In</a>
+                <img class="w-8" src="./images/nav-sign-in-logo.svg" alt="">
+            </div>
+        </div>
+    </nav>
+    <div class="nav-bottom-text text-center font-bold bg-myGray p-3 z-1">
+        <p>No Wallet KYC Required
+            😊
+            <span class="font-light">to pay using UPI on Paytm.</span>
+            <a href="#"> Learn more.</a>
+        </p>
+    </div>
+
+
+
+    <!-- HERO SECITON -->
+    <div id="hero" class="mt-20">
+        <div class="flex sm:flex-col-reverse md:flex-row justify-between items-center space-x-20">
+            <div class="left w-11/12 mx-auto  sm:text-center md:ml-20 md:text-left">
+                <div class="image flex sm:justify-center md:justify-start sm:mt-20 md:mt-0">
+                    <img class=" w-20" src="./images/heor-logo.png" alt="">
+
+                </div>
+                <h1 class="mt-6 sm:text-4xl md:text-6xl font-bold">India's Most-loved <br> Payments App
+                </h1>
+                <p class="my-8 mb-10 font-medium">Recharge & pay bills, book flights & movie tickets, open a savings
+                    account, invest in stocks & mutual funds, and do a lot more.
+                </p>
+                <a href="#" class="inline-flex items-center rounded-full bg-black text-white px-5 py-3">Download Paytm
+                    App
+                    <img class="mx-2 w-5" src="./images/apple-logo.jpg" alt="">
+                    <img class="w-5" src="./images/play-store-icon.svg" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <img class="sm:w-[400px] lg:w-[900px] xl:w-[1000px]" src="./images/hero-mobile-image.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="recharge" class="bg-myLightBlue mt-20">
+        <div class="container mx-auto py-16">
+            <h1 class="text-3xl font-bold text-white mx-3">Recharge & Pay Bills on Paytm.</h1>
+
+            <div class="text-center grid sm:grid-cols-3  md:grid-cols-5 lg:grid-cols-7 justify-between mx-3 mt-7 text-white font-bold">
+                <div class="item hover:bg-blue-400 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Recharge/01-recharge.png" alt="">
+                    <a href="#">Recharge <br> Prepaid <br> Mobile ></a>
+                </div>
+                <div class="item hover:bg-blue-400 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Recharge/02-recharge.png" alt="">
+                    <a href="#">Recharge <br> Rent <br> Payment ></a>
+                </div>
+                <div class="item hover:bg-blue-400 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Recharge/03-recharge.png" alt="">
+                    <a href="#">Pay <br> Electricity <br> Bill ></a>
+                </div>
+                <div class="item hover:bg-blue-400 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Recharge/04-recharge.png" alt="">
+                    <a href="#">Recharge <br> DTH <br> Connection ></a>
+                </div>
+                <div class="item hover:bg-blue-400 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Recharge/05-recharge.png" alt="">
+                    <a href="#">Book <br> Gas <br> Cylinder ></a>
+                </div>
+                <div class="item hover:bg-blue-400 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Recharge/06-recharge.png" alt="">
+                    <a href="#">Pay <br> Credit<br> Card Bill ></a>
+                </div>
+                <div class="item hover:bg-blue-400 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Recharge/07-recharge.png" alt="">
+                    <a href="#">All <br> Payment <br> Services ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="booking" class="bg-myDarkBlue">
+        <div class="container mx-auto py-16">
+            <h1 class="mx-3 text-3xl font-bold text-white">Book & Buy on Paytym.</h1>
+       
+            <div class="text-center grid sm:grid-cols-3  md:grid-cols-5 lg:grid-cols-7 justify-between mx-3 mt-7 text-white font-bold">
+                <div class="item hover:bg-blue-900 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Booking/01-booking.png" alt="">
+                    <a href="#">Movie <br> Tickets ></a>
+                </div>
+                <div class="item hover:bg-blue-900 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Booking/02-Booking.png" alt="">
+                    <a href="#">Flight <br> Tickets></a>
+                </div>
+                <div class="item hover:bg-blue-900 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Booking/03-Booking.png" alt="">
+                    <a href="#">Bus <br>Tickets ></a>
+                </div>
+                <div class="item hover:bg-blue-900 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Booking/04-Booking.png" alt="">
+                    <a href="#">Train <br>Tickets ></a>
+                </div>
+                <div class="item hover:bg-blue-900 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Booking/05-Booking.png" alt="">
+                    <a href="#">Car & <br>Bikes ></a>
+                </div>
+                <div class="item hover:bg-blue-900 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Booking/06-Booking.png" alt="">
+                    <a href="#">International <br>Flights ></a>
+                </div>
+                <div class="item hover:bg-blue-900 pointer rounded-xl py-6 px-2">
+                    <img class="w-16 mx-auto mb-3" src="./images/Booking/07-booking.webp" alt="">
+                    <a href="#">Invest <br>in Stocks ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="paytm-instruments">
+        
+    </div>
+
+</body>
+
+</html>
